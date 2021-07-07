@@ -1,0 +1,12 @@
+# This file is where you define your pipelines. You can define multiple.
+# For more information on multiple pipelines, see the documentation:
+#   https://www.elastic.co/guide/en/logstash/current/multiple-pipelines.html
+
+- pipeline.id: filebeat
+  path.config: "/home/ubuntu/logstash-test/filebeat.conf"
+  config.reload.automatic: true
+  config.reload.interval: 60
+# - pipeline.id: filebeat
+#   path.config: "/home/ubuntu/logstash-test/filebeat.conf"
+#   config.reload.automatic: true
+#   config.reload.interval: 60
